@@ -1,7 +1,7 @@
 {
 	"name": "supply-chain-backend",
 	"version": "0.0.1",
-	"description": "",
+	"description": "NestJS API for supply chain, inventory, and purchase orders",
 	"author": "",
 	"private": true,
 	"license": "UNLICENSED",
