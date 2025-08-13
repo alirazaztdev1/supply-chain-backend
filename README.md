@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+NestJS API for Next Supply Chain Management (inventory, POs, suppliers, and GRNs).
 
 ## Installation
 
