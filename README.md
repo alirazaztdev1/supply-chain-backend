@@ -30,6 +30,7 @@ NestJS API for Next Supply Chain Management (inventory, POs, suppliers, and GRNs
 
 ```bash
 $ npm install
+$ cp .env.example .env
 ```
 
 ## Running the app
