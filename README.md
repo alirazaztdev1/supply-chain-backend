@@ -36,7 +36,7 @@ $ cp .env.example .env
 ## Running the app
 
 ```bash
-# development
+# development (defaults to port 5000)
 $ npm run start
 
 # watch mode
