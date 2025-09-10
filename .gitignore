@@ -42,6 +42,7 @@ lerna-debug.log*
 /.env
 /.env.staging
 /.env.production
+/.env.local
 
 # Uploads 
 uploads/*
