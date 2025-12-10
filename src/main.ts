@@ -47,7 +47,9 @@ async function bootstrap() {
 			.build()
 		const document = SwaggerModule.createDocument(app, swaggerConfig)
 		SwaggerModule.setup('docs', app, document)
-		await app.listen(5000)
+		const port = Number(process.env.PORT) || 5000
+		await app.listen(port)
+		Logger.log(`NSCM API listening on ${port}`, 'Bootstrap')
 		if (module.hot) {
 			module.hot.accept()
 			module.hot.dispose(() => app.close())
