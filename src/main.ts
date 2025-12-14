@@ -39,7 +39,7 @@ async function bootstrap() {
 		app.useStaticAssets({ root: join(__dirname, '../') })
 		// app.use(new HttpExceptionFilter())
 		const swaggerConfig = new DocumentBuilder()
-			.setTitle('Next Supply Chain Management')
+			.setTitle('Nest Supply Chain Management')
 			.setDescription('The NSCM Swagger APIs ')
 			.setVersion('3.0')
 			.addTag('NSCM')
