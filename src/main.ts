@@ -41,7 +41,7 @@ async function bootstrap() {
 		const swaggerConfig = new DocumentBuilder()
 			.setTitle('Nest Supply Chain Management')
 			.setDescription('APIs for inventory, suppliers, and purchase orders')
-			.setVersion('3.0')
+			.setVersion('3.1')
 			.addTag('NSCM')
 			.addBearerAuth()
 			.build()
