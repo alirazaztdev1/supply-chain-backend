@@ -34,7 +34,7 @@ async function bootstrap() {
 
 		app.register(compression)
 		app.register(contentParser)
-		app.enableCors()
+		app.enableCors({ origin: true, credentials: true })
 		app.useGlobalPipes(new ValidationPipe({ whitelist: true }))
 		app.useStaticAssets({ root: join(__dirname, '../') })
 		// app.use(new HttpExceptionFilter())
