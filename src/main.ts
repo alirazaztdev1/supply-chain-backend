@@ -35,7 +35,7 @@ async function bootstrap() {
 		app.register(compression)
 		app.register(contentParser)
 		app.enableCors({ origin: true, credentials: true })
-		app.useGlobalPipes(new ValidationPipe({ whitelist: true }))
+		app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }))
 		app.useStaticAssets({ root: join(__dirname, '../') })
 		// app.use(new HttpExceptionFilter())
 		const swaggerConfig = new DocumentBuilder()
