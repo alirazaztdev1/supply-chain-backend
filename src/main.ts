@@ -56,7 +56,7 @@ async function bootstrap() {
 		}
 	} catch (error) {
 		Logger.error(`Error starting server, ${error}`, '', 'Bootstrap', false)
-		process.exit()
+		process.exit(1)
 	}
 }
 bootstrap()
