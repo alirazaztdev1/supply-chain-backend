@@ -41,7 +41,7 @@ import { StockMovementReportModule } from './modules/stock-movement-report/stock
 @Module({
 	imports: [
 		ConfigModule.forRoot({
-			envFilePath: `${process.cwd()}/.env.${process.env.NODE_ENV}`,
+			envFilePath: [`.env.${process.env.NODE_ENV}`, '.env'],
 			isGlobal: true,
 			load: [configuration]
 		}),
