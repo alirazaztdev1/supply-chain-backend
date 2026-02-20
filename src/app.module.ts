@@ -52,7 +52,7 @@ import { StockMovementReportModule } from './modules/stock-movement-report/stock
 		ThrottlerModule.forRoot([
 			{
 				ttl: 60000,
-				limit: 30
+				limit: 60
 			}
 		]),
 		EventEmitterModule.forRoot(),
