@@ -12,6 +12,6 @@ export const configuration = () => ({
       user: process.env.NESTMAILER_USER,
       password: process.env.NESTMAILER_PASSWORD,
       adminEmail: process.env.NESTMAILER_ADMIN_EMAIL,
-      fromEmail: process.env.NESTMAILER_FROM_EMAIL     
+      fromEmail: process.env.NESTMAILER_FROM_EMAIL || process.env.NESTMAILER_FROM_ADDRESS
     }
 });
