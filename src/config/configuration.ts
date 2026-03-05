@@ -4,7 +4,8 @@ export const configuration = () => ({
     mongoUrl: process.env.MONGO_URL,
     jwt: {
         secret: process.env.ACCESS_TOKEN_SECRET,
-        salt: process.env.SALT,
+        salt: process.env.SALT || '10',
+        expiresIn: process.env.JWT_EXPIRES_IN || '1d',
     },
     frontendUrl: process.env.FRONTEND_URL,
     mailer: {
