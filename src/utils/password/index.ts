@@ -13,7 +13,8 @@ import 'dotenv/config'
  * @beta
  */
 export const hashPassword = async (password: string): Promise<string> => {
-	return await hash(password, +process.env.SALT)
+	const saltRounds = Number(process.env.SALT) || 10
+	return await hash(password, saltRounds)
 }
 
 /**
