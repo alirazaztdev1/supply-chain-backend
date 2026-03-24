@@ -13,6 +13,9 @@ import 'dotenv/config'
  * @beta
  */
 export const hashPassword = async (password: string): Promise<string> => {
+	if (!password) {
+		throw new Error('Password is required')
+	}
 	const saltRounds = Number(process.env.SALT) || 10
 	return await hash(password, saltRounds)
 }
