@@ -36,5 +36,6 @@ export const comparePassword = async (
 	password: string,
 	hash: string
 ): Promise<boolean> => {
+	if (!password || !hash) return false
 	return await compare(password, hash)
 }
