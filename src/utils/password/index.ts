@@ -7,7 +7,7 @@ import 'dotenv/config'
  * @remarks
  * This method is part of the {@link utils/password}.
  *
- * @param password - 1st input number
+ * @param password - Plain text password to hash
  * @returns The hashed password mean of `password`
  *
  * @beta
