@@ -20,7 +20,7 @@ export class CreateUserDto {
 		description: 'First name'
 	})
 	@IsNotEmpty()
-	@Length(3, 10)
+	@Length(2, 50)
 	readonly firstName: string
 
 	@ApiProperty({
