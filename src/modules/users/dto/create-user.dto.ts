@@ -28,7 +28,7 @@ export class CreateUserDto {
 		description: 'Last name'
 	})
 	@IsNotEmpty()
-	@Length(3, 10)
+	@Length(2, 50)
 	readonly lastName: string
 
 	@ApiProperty({
