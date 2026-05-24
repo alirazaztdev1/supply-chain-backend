@@ -38,6 +38,7 @@ export class CreateUserDto {
 	})
 	@IsNotEmpty()
 	@IsEmail()
+	@Transform(({ value }) => (typeof value === 'string' ? value.trim().toLowerCase() : value))
 	readonly email: string
 
 	@ApiProperty({
