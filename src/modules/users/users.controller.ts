@@ -75,7 +75,7 @@ export class UsersController {
 		type: [User]
 	})
 	@ApiOperation({
-		summary: 'Get All Users'
+		summary: 'Get a user by id'
 	})
 	@Get(':id')
 	@CheckPermission('read', 'users')
