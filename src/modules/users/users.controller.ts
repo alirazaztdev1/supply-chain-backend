@@ -92,7 +92,7 @@ export class UsersController {
 	@CheckPermission('create', 'users')
 	async create(@Body() createUserDto: CreateUserDto, @Res() res) {
 		const user = await this.userService.create(createUserDto)
-		return res.status(200).send({
+		return res.status(201).send({
 			data: user,
 			message: `User has been created (${user?.firstName})`
 		})
