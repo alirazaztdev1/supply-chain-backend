@@ -42,7 +42,7 @@ export class SuppliersController {
 		type: [Supplier]
 	})
 	@ApiOperation({
-		summary: 'Get All Suppliers'
+		summary: 'List suppliers with optional filters'
 	})
 	@Get()
 	@CheckPermission('read', 'suppliers')
