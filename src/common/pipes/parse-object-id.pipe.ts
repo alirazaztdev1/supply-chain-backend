@@ -7,7 +7,7 @@ export class ParseObjectIdPipe implements PipeTransform<any, Types.ObjectId> {
 		const validObjectId = Types.ObjectId.isValid(value)
 
 		if (!validObjectId) {
-			throw new BadRequestException('Invalid ObjectId')
+			throw new BadRequestException('Invalid Mongo ObjectId')
 		}
 
 		return new Types.ObjectId(value)
