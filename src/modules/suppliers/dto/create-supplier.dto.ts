@@ -35,7 +35,7 @@ class SupplierEvaluation {
 		example: '2000 Shirts Per Day/5000 Shirts Per Month'
 	})
 	@MaxLength(255)
-	productionCapactiy: string
+	productionCapacity: string
 
 	@ApiProperty({
 		description: 'Fbr Registration Status',
