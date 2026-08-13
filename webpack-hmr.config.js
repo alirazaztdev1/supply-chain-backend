@@ -5,7 +5,7 @@ module.exports = function (options, webpack) {
 	return {
 		...options,
 		// errorDetails: true,
-		entry: ['webpack/hot/poll?100', options.entry],
+		entry: ['webpack/hot/poll?1000', options.entry],
 		externals: [
 			nodeExternals({
 				allowlist: ['webpack/hot/poll?100']
